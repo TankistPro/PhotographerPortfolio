@@ -1,0 +1,137 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy, sans-serif;
+}
+
+.main-block {
+    height: 1080px;
+    background: url('../../img/main-bg.png') no-repeat;
+    background-size: 1920px 1080px;
+
+    .menu {
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 79px;
+
+        &-burger {
+            cursor: pointer;
+        }
+
+        &-items{
+            display: flex;
+
+            &__block {
+                margin-left: 115px;
+
+                &__phone, &__city {
+                    display: inline-block;
+                    color: #ffffff;
+                    font-size:1.5625rem ;
+            
+                    &::before {
+                        vertical-align: middle;
+                        margin-right: 15px;
+                        width: 25px;
+                        height: 25px;
+                    }
+
+                }
+
+                &__phone {
+                    text-decoration: none;
+
+                    &::before {
+                        content: url('../../img/phone.svg');
+
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                &__city {
+                    margin-left: 48px;
+
+                    &::before {
+                        content: url('../../img/city.svg');
+                    }
+                }
+            }
+
+            &__social {
+                display: flex;
+                align-items: center;
+                margin-left: 165px;
+                img {
+                    cursor: pointer;
+
+                    &:last-child {
+                        margin-left: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-block {
+        width: fit-content;
+        margin-left: 10%;
+        margin-top: 197px;
+
+        &__content {
+            color:#ffffff;
+
+            .banner-text {
+                font-weight: 500;
+                line-height: 35px;
+                font-size: 1.875rem;
+                font-style: normal;
+
+                &__main {
+                    font-size: 4.6875rem;
+                    font-weight: bold;
+                    margin: 20px 0;
+                    .orange {
+                        color: #FF6B00;
+                    }
+                }
+            }
+    
+            .quote {
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+                font-size: 1.875rem;
+            }
+        }
+
+        &__button{
+            color: #000000;
+            font-size: 1.25rem;
+            line-height: 24px;
+            padding: 22px 45px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            border: none;
+            cursor: pointer;
+            margin-top: 57px;
+        }
+    }
+}
+
+.static-block {
+    width: 1500px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 36px rgba(15, 9, 11, 0.1);
+    margin: -158px auto 68px auto;
+}
