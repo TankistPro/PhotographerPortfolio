@@ -123,6 +123,7 @@
             border: none;
             cursor: pointer;
             margin-top: 57px;
+            outline: none;
         }
     }
 }
@@ -134,4 +135,32 @@
     background-color: #ffffff;
     box-shadow: 0px 0px 36px rgba(15, 9, 11, 0.1);
     margin: -158px auto 68px auto;
+    display: flex;
+    justify-content: center;
+
+    &__content {
+        width: 80%;
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+
+        &-item {
+            text-transform: uppercase;
+            color: #000000;
+            font-size: 1.25rem;
+            line-height: 24px;
+            text-align: center;
+            flex-basis: 194px;
+            font-weight: bold;
+
+            .value-item {
+                font-weight: normal;
+                font-size: 3.75rem;
+                line-height: 72px;
+                text-shadow: 0px 4px 0px #FF6B00;
+                font-weight: 600;
+            }
+        }
+    }
 }
