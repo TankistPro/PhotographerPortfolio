@@ -32,6 +32,7 @@
 }
 
 .main-block .menu-burger__block {
+  z-index: 10;
   background-color: #000000;
   position: fixed;
   display: flex;
@@ -777,3 +778,4 @@
   color: #000000;
   font-weight: 600;
 }
+/*# sourceMappingURL=style.css.map */
