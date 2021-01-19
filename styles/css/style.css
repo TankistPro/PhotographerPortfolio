@@ -15,8 +15,7 @@
 
 .main-block {
   height: 1080px;
-  background: url("../../img/main-bg.png") no-repeat;
-  background-size: 1920px 1080px;
+  background: url("../../img/bg-vector.svg") left 40% no-repeat, url("../../img/bg-image.png") right no-repeat, #0F090B;
 }
 
 .main-block .menu {
@@ -99,7 +98,7 @@
 }
 
 .main-block .menu-burger__block-footer__email:before {
-  content: url("/img/email-icon.svg");
+  content: url("../../img/email-icon.svg");
   width: 29px;
   height: 29px;
   vertical-align: middle;
