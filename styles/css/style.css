@@ -9,6 +9,10 @@
   font-family: Gilroy, sans-serif;
 }
 
+.orange {
+  color: #FF6B00;
+}
+
 .main-block {
   height: 1080px;
   background: url("../../img/main-bg.png") no-repeat;
@@ -18,8 +22,10 @@
 .main-block .menu {
   width: 90%;
   display: flex;
+  align-items: center;
   margin: 0 auto;
   padding-top: 79px;
+  height: 33px;
 }
 
 .main-block .menu-burger .burger-icon {
@@ -178,15 +184,12 @@
   margin: 20px 0;
 }
 
-.main-block .banner-block__content .banner-text__main .orange {
-  color: #FF6B00;
-}
-
 .main-block .banner-block__content .quote {
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
   font-size: 1.875rem;
+  max-width: 1055px;
 }
 
 .main-block .banner-block__button {
@@ -247,6 +250,10 @@
 .portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.portfolio button {
+  cursor: pointer;
 }
 
 .portfolio__main-page {
@@ -680,4 +687,94 @@
   line-height: 24px;
   color: #FFFFFF;
   text-transform: uppercase;
+}
+
+.qblock {
+  background-color: #ffffff;
+  width: 90%;
+  margin: 133px auto 210px auto;
+}
+
+.qblock-title__block {
+  margin-bottom: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0F090B;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.qblock-title__block-subtitle {
+  font-size: 1.875rem;
+  line-height: 36px;
+}
+
+.qblock-title__block-title {
+  line-height: 60px;
+  font-size: 3.125rem;
+  margin-bottom: 30px;
+}
+
+.qblock-content {
+  display: flex;
+  justify-content: center;
+}
+
+.qblock-content__left, .qblock-content__right {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.qblock-content__left .qblock-content__q {
+  margin-top: -10%;
+}
+
+.qblock-content__middle {
+  padding: 0 75px;
+}
+
+.qblock-content__right {
+  margin-top: 2%;
+  align-items: flex-start;
+}
+
+.qblock-content__right .qblock-content__q, .qblock-content__right .qblock-content__answer {
+  text-align: left;
+}
+
+.qblock-content__answer {
+  border-radius: 20px;
+  background-color: #ffffff;
+  max-width: 736px;
+  padding: 37px 31px 27px 31px;
+  box-shadow: 0 0 15px -10px #000000;
+}
+
+.qblock-content__answer.orange-block {
+  background-color: #FF6B00;
+  box-shadow: none;
+}
+
+.qblock-content__answer.orange-block p {
+  color: #ffffff;
+}
+
+.qblock-content__answer p {
+  color: #0F090B;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: justify;
+  font-size: 1.375rem;
+}
+
+.qblock-content__q {
+  font-size: 3.125rem;
+  line-height: 60px;
+  text-align: right;
+  color: #000000;
+  font-weight: 600;
 }
