@@ -9,6 +9,12 @@
     font-family: Gilroy, sans-serif;
 }
 
+.orange {
+    color: #FF6B00;
+}
+
+// =====================MainBlock================
+
 .main-block {
     height: 1080px;
     background: url('../../img/main-bg.png') no-repeat;
@@ -17,8 +23,10 @@
     .menu {
         width: 90%;
         display: flex;
+        align-items: center;
         margin: 0 auto;
         padding-top: 79px;
+        height: 33px;
 
         &-burger {
 
@@ -178,10 +186,6 @@
                     font-size: 4.6875rem;
                     font-weight: bold;
                     margin: 20px 0;
-
-                    .orange {
-                        color: #FF6B00;
-                    }
                 }
             }
     
@@ -190,6 +194,7 @@
                 font-weight: 500;
                 line-height: 30px;
                 font-size: 1.875rem;
+                max-width: 1055px;
             }
         }
 
@@ -207,7 +212,7 @@
         }
     }
 }
-
+//========================== StatisticBlock=================
 .statistic-wrapper {
     width: 100%;
     display: flex;
@@ -249,6 +254,8 @@
         }
     }
 }
+
+// ===================Portfolio==========================
 
 .portfolio {
     display: grid;
@@ -509,6 +516,107 @@
                     margin-left: 22px;
                 }
             }
+        }
+    }
+}
+
+// =================F.A.Q ==================
+
+.qblock {
+    background-color: #ffffff;
+    width: 90%;
+    margin: 133px auto 210px auto;
+
+    &-title {
+        &__block {
+            margin-bottom: 110px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #0F090B;
+            text-transform: uppercase;
+            font-weight: 600;
+
+            &-subtitle{
+                font-size: 1.875rem;
+                line-height: 36px;
+            }
+            &-title{
+                line-height: 60px;
+                font-size: 3.125rem;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: center;
+
+        &__left, &__right {
+            flex-basis: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        &__left {
+
+            .qblock-content {
+
+                &__q {
+                    margin-top: -10%;
+                }
+            }
+        }
+
+        &__middle {
+            padding: 0 75px;
+        }
+
+        &__right {
+            margin-top: 2%;
+            align-items: flex-start;
+
+            .qblock-content {
+                &__q, &__answer {
+                    text-align: left;
+                }
+            }
+        }
+
+        &__answer {
+            border-radius: 20px;
+            background-color: #ffffff;
+            max-width: 736px;
+            padding: 37px 31px 27px 31px;
+            box-shadow: 0 0 15px -10px #000000;
+
+            &.orange-block {
+                background-color: #FF6B00;
+                box-shadow: none;
+
+                p {
+                    color: #ffffff;
+                }
+            }
+
+            p {
+                color: #0F090B;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+                text-align: justify;
+                font-size: 1.375rem;
+            }
+        }
+
+        &__q {
+            font-size: 3.125rem;
+            line-height: 60px;
+            text-align: right;
+            color: #000000;
+            font-weight: 600;
         }
     }
 }
