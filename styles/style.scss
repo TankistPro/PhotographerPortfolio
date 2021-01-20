@@ -344,7 +344,8 @@
 
         & .text {
             background-color: #000;
-            padding: 27% 11% 12% 16%;
+            padding: 132px 50px 142px 52px;
+            box-sizing: border-box;
 
             & h3 {
                 font-style: normal;
@@ -417,7 +418,8 @@
         & .cosp {
             background-image: url("../../img/portfolio/cosp-bg.png");
             background-size: cover;
-            padding: 28% 28% 32% 35%;
+            padding: 264px 178px 296px 254px;
+            box-sizing: border-box;
             display: flex;
 
             & p {
@@ -469,7 +471,8 @@
     
             & .text {
                 background-color: #000;
-                padding: 27% 11% 12% 16%;
+                padding: 132px 50px 142px 52px;
+                box-sizing: border-box;
     
                 & h3 {
                     font-style: normal;
@@ -996,6 +999,131 @@
                 img {
                     width: 29px;
                     height: 29px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .portfolio {
+        grid-template-columns: 1fr;
+
+        &__indandlove {
+            & .text {
+                & h3 {
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                }
+    
+                & h2 {
+                    font-size: 30px;
+                    margin-bottom: 12px;
+                }
+    
+                & .pn {
+                    & p {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        &__cospandstud .stud {
+            & .text {
+                & h3 {
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                }
+    
+                & h2 {
+                    font-size: 30px;
+                    margin-bottom: 12px;
+                }
+    
+                & .pn {
+                    & p {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .price-services__middle__blocks {
+        flex-direction: column;
+
+        & .block {
+            width: 100%;
+            margin-bottom: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .portfolio__indandlove {
+        grid-template-columns: 1fr;
+
+        & .text.ind {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        & .text {
+            padding: 132px 60px 142px 140px;
+
+            & h3 {
+                font-size: 21px;
+                margin-bottom: 12px;
+            }
+
+            & h2 {
+                font-size: 38px;
+                margin-bottom: 24px;
+            }
+
+            & .pn {
+                & p {
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .portfolio__photos {
+        height: 3500px;
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio__cospandstud .stud {
+        grid-template-columns: 1fr;
+
+        & .text {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        & .text {
+            padding: 132px 60px 142px 140px;
+
+            & h3 {
+                font-size: 21px;
+                margin-bottom: 12px;
+            }
+
+            & h2 {
+                font-size: 38px;
+                margin-bottom: 24px;
+            }
+
+            & .pn {
+                & p {
+                    font-size: 25px;
+                    margin-bottom: 20px;
                 }
             }
         }
