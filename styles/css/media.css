@@ -1,6 +1,53 @@
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1580px) {
+  .contact-block {
+    grid-template-columns: 1fr;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .contact-block__right, .contact-block__left {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-block__right {
+    max-width: none;
+    width: 100%;
+    margin-top: 65px;
+  }
+  .contact-block__left-feedback {
+    width: 100%;
+  }
+  .contact-block__left-feedback__content-block .feedback__input {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .main-block {
+    background: url(../../img/bg-vector.svg) -50px 40% no-repeat, url(../../img/bg-image.png) top right -90px no-repeat, #0F090B;
+  }
+}
+
+@media screen and (max-width: 1420px) {
   .portfolio {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .main-block {
+    background: url(../../img/bg-vector.svg) -110px 40% no-repeat, url(../../img/bg-image.png) top right -150px no-repeat, #0F090B;
+  }
+  .main-block .banner-block {
+    width: 75%;
+  }
+  .statistic-wrapper .static-block {
+    flex-basis: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+  .statistic-wrapper .static-block__content {
+    width: 100%;
   }
   .portfolio__indandlove .text h3 {
     font-size: 18px;
@@ -35,7 +82,26 @@
   }
 }
 
+@media screen and (max-width: 1150px) {
+  .main-block {
+    background: url(../../img/bg-image.png) top right -150px no-repeat, #0F090B;
+  }
+}
+
 @media screen and (max-width: 940px) {
+  .main-block .menu-items {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .main-block .menu-items__block, .main-block .menu-items__social {
+    margin-left: 0;
+  }
+  .main-block .menu-burger__block .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .portfolio__indandlove {
     grid-template-columns: 1fr;
   }
@@ -83,6 +149,19 @@
   .portfolio__cospandstud .stud .text .pn p {
     font-size: 25px;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .main-block .menu-burger__block {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .contact-block {
+    grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=media.css.map */
