@@ -33,13 +33,63 @@
         background: url(../../img/bg-vector.svg) -50px 40% no-repeat, 
         url(../../img/bg-image.png) top right -90px no-repeat, #0F090B;
     }
-}
 
-@media screen and (max-width: 1420px) {
     .portfolio {
         grid-template-columns: 1fr;
+
+        &__indandlove {
+            & .text {
+                padding: 182px 60px 142px 120px;
+
+                & h3 {
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                }
+    
+                & h2 {
+                    font-size: 30px;
+                    margin-bottom: 12px;
+                }
+    
+                & .pn {
+                    & p {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        &__photos {
+            height: 2800px;
+        }
+
+        &__cospandstud .stud {
+            & .text {
+                padding: 182px 60px 142px 120px;
+
+                & h3 {
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                }
+    
+                & h2 {
+                    font-size: 30px;
+                    margin-bottom: 12px;
+                }
+    
+                & .pn {
+                    & p {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        
     }
 }
+
 
 @media screen and (max-width: 1250px) {
     .main-block {
@@ -62,51 +112,6 @@
                 width: 100%;
             }
         }
-    }
-
-    .portfolio {
-        &__indandlove {
-            & .text {
-                & h3 {
-                    font-size: 18px;
-                    margin-bottom: 8px;
-                }
-    
-                & h2 {
-                    font-size: 30px;
-                    margin-bottom: 12px;
-                }
-    
-                & .pn {
-                    & p {
-                        font-size: 20px;
-                        margin-bottom: 10px;
-                    }
-                }
-            }
-        }
-
-        &__cospandstud .stud {
-            & .text {
-                & h3 {
-                    font-size: 18px;
-                    margin-bottom: 8px;
-                }
-    
-                & h2 {
-                    font-size: 30px;
-                    margin-bottom: 12px;
-                }
-    
-                & .pn {
-                    & p {
-                        font-size: 20px;
-                        margin-bottom: 10px;
-                    }
-                }
-            }
-        }
-        
     }
 
     .price-services__middle__blocks {
@@ -216,6 +221,180 @@
         width: 100%;
         height: 100%;
     }
+}
+
+@media screen and (max-width: 800px) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .portfolio {
+        &__main-page {
+            height: 100vw;
+            .middle{
+                & p {
+                    font-size: 20px;
+                }
+
+                & h3 {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        &__indandlove {
+            display: flex;
+            flex-direction: column;
+            flex-flow: wrap;
+
+            & .text.ind {
+                order: 1;
+            }
+            & .photo.ind {
+                order: 2;
+            }
+            & .text.love {
+                order: 3;
+            }
+            & .photo.love {
+                order: 4;
+            }
+
+            & .text {
+                width: 100%;
+                height: 100vw;
+                padding: 182px 60px 142px 120px;
+
+                & h3 {
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                }
+    
+                & h2 {
+                    font-size: 30px;
+                    margin-bottom: 12px;
+                }
+    
+                & .pn {
+                    & p {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            & .photo {
+                // height: auto;
+                height: 100vw;
+            }
+        }
+
+        &__photos {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__cospandstud {
+            & .cosp {
+                padding: 0;
+                height: 100vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & p {
+                    display: none;
+                }
+                & .name {
+                    height: fit-content;
+                }
+            }
+
+            & .stud {
+                display: flex;
+                flex-direction: column;
+                flex-flow: wrap;
+
+                & .text {
+                    order: 1;
+                }
+                & .photo {
+                    order: 2;
+                }
+
+                & .text {
+                    width: 100%;
+                    height: 100vw;
+                    padding: 182px 60px 142px 120px;
+    
+                    & h3 {
+                        font-size: 18px;
+                        margin-bottom: 8px;
+                    }
+        
+                    & h2 {
+                        font-size: 30px;
+                        margin-bottom: 12px;
+                    }
+        
+                    & .pn {
+                        & p {
+                            font-size: 20px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+    
+                & .photo {
+                    // height: auto;
+                    height: 100vw;
+                }
+            }
+        }
+    }
+
+    .price-services__middle__blocks {
+        .block {
+            padding: 25px 24px 31px 40px;
+
+            & h3 {
+                font-size: 25px;
+                margin-bottom: 22px;
+            }
+
+            & h2 {
+                font-size: 37px;
+                margin-bottom: 4px;
+            }
+
+            & p {
+                font-size: 16px;
+                margin-bottom: 17px;
+            }
+
+            & .list {
+                padding-top: 30px;
+
+                & .point {
+                    margin-bottom: 30px;
+                    & img {
+                        margin-right: 20px;
+                    }
+
+                    & p {
+                        font-size: 12.3975px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 530px) {
+    // start thos
 }
 
 @media screen and (max-width: 378px) {

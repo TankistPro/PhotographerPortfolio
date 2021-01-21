@@ -26,11 +26,41 @@
   .main-block {
     background: url(../../img/bg-vector.svg) -50px 40% no-repeat, url(../../img/bg-image.png) top right -90px no-repeat, #0F090B;
   }
-}
-
-@media screen and (max-width: 1420px) {
   .portfolio {
     grid-template-columns: 1fr;
+  }
+  .portfolio__indandlove .text {
+    padding: 182px 60px 142px 120px;
+  }
+  .portfolio__indandlove .text h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .portfolio__indandlove .text h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  .portfolio__indandlove .text .pn p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .portfolio__photos {
+    height: 2800px;
+  }
+  .portfolio__cospandstud .stud .text {
+    padding: 182px 60px 142px 120px;
+  }
+  .portfolio__cospandstud .stud .text h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .portfolio__cospandstud .stud .text h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  .portfolio__cospandstud .stud .text .pn p {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -48,30 +78,6 @@
   }
   .statistic-wrapper .static-block__content {
     width: 100%;
-  }
-  .portfolio__indandlove .text h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
-  .portfolio__indandlove .text h2 {
-    font-size: 30px;
-    margin-bottom: 12px;
-  }
-  .portfolio__indandlove .text .pn p {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  .portfolio__cospandstud .stud .text h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
-  .portfolio__cospandstud .stud .text h2 {
-    font-size: 30px;
-    margin-bottom: 12px;
-  }
-  .portfolio__cospandstud .stud .text .pn p {
-    font-size: 20px;
-    margin-bottom: 10px;
   }
   .price-services__middle__blocks {
     flex-direction: column;
@@ -159,9 +165,140 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .portfolio__main-page {
+    height: 100vw;
+  }
+  .portfolio__main-page .middle p {
+    font-size: 20px;
+  }
+  .portfolio__main-page .middle h3 {
+    font-size: 40px;
+  }
+  .portfolio__indandlove {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+  .portfolio__indandlove .text.ind {
+    order: 1;
+  }
+  .portfolio__indandlove .photo.ind {
+    order: 2;
+  }
+  .portfolio__indandlove .text.love {
+    order: 3;
+  }
+  .portfolio__indandlove .photo.love {
+    order: 4;
+  }
+  .portfolio__indandlove .text {
+    width: 100%;
+    height: 100vw;
+    padding: 182px 60px 142px 120px;
+  }
+  .portfolio__indandlove .text h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .portfolio__indandlove .text h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  .portfolio__indandlove .text .pn p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .portfolio__indandlove .photo {
+    height: 100vw;
+  }
+  .portfolio__photos {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio__cospandstud .cosp {
+    padding: 0;
+    height: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio__cospandstud .cosp p {
+    display: none;
+  }
+  .portfolio__cospandstud .cosp .name {
+    height: fit-content;
+  }
+  .portfolio__cospandstud .stud {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+  .portfolio__cospandstud .stud .text {
+    order: 1;
+  }
+  .portfolio__cospandstud .stud .photo {
+    order: 2;
+  }
+  .portfolio__cospandstud .stud .text {
+    width: 100%;
+    height: 100vw;
+    padding: 182px 60px 142px 120px;
+  }
+  .portfolio__cospandstud .stud .text h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .portfolio__cospandstud .stud .text h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  .portfolio__cospandstud .stud .text .pn p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .portfolio__cospandstud .stud .photo {
+    height: 100vw;
+  }
+  .price-services__middle__blocks .block {
+    padding: 25px 24px 31px 40px;
+  }
+  .price-services__middle__blocks .block h3 {
+    font-size: 25px;
+    margin-bottom: 22px;
+  }
+  .price-services__middle__blocks .block h2 {
+    font-size: 37px;
+    margin-bottom: 4px;
+  }
+  .price-services__middle__blocks .block p {
+    font-size: 16px;
+    margin-bottom: 17px;
+  }
+  .price-services__middle__blocks .block .list {
+    padding-top: 30px;
+  }
+  .price-services__middle__blocks .block .list .point {
+    margin-bottom: 30px;
+  }
+  .price-services__middle__blocks .block .list .point img {
+    margin-right: 20px;
+  }
+  .price-services__middle__blocks .block .list .point p {
+    font-size: 12.3975px;
+  }
+}
+
 @media screen and (max-width: 378px) {
   .contact-block {
     grid-template-columns: 1fr;
   }
 }
-/*# sourceMappingURL=media.css.map */
