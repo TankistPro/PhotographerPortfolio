@@ -394,7 +394,88 @@
 }
 
 @media screen and (max-width: 530px) {
-    // start thos
+    .portfolio {
+        &__main-page {
+            padding: 43px 43px;
+            height: auto;
+
+            & .middle h3 {
+                font-size: 31px;
+            }
+        }
+
+        &__indandlove {
+            & .text {
+                padding: 108px 35px 108px 42px;
+            }
+        }
+
+        &__cospandstud .stud {
+            & .text {
+                padding: 108px 35px 108px 42px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .portfolio {
+        &__main-page {
+            & .middle h3 {
+                font-size: 25px;
+            }
+
+            & .middle p {
+                font-size: 18px;
+            }
+        }
+
+        &__indandlove {
+            & .text {
+                height: auto;
+
+                & h3 {
+                    font-size: 11px;
+                }
+
+                & h2 {
+                    font-size: 21px;
+                }
+
+                & .pn p {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        &__cospandstud .stud {
+            & .text {
+                height: auto;
+
+                & h3 {
+                    font-size: 11px;
+                }
+
+                & h2 {
+                    font-size: 21px;
+                }
+
+                & .pn p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .price-services__middle {
+        & p {
+            font-size: 16px;
+        }
+
+        & h3 {
+            font-size: 27px;
+        }
+    }
 }
 
 @media screen and (max-width: 378px) {

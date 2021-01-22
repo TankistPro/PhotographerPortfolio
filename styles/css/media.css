@@ -297,6 +297,61 @@
   }
 }
 
+@media screen and (max-width: 530px) {
+  .portfolio__main-page {
+    padding: 43px 43px;
+    height: auto;
+  }
+  .portfolio__main-page .middle h3 {
+    font-size: 31px;
+  }
+  .portfolio__indandlove .text {
+    padding: 108px 35px 108px 42px;
+  }
+  .portfolio__cospandstud .stud .text {
+    padding: 108px 35px 108px 42px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .portfolio__main-page .middle h3 {
+    font-size: 25px;
+  }
+  .portfolio__main-page .middle p {
+    font-size: 18px;
+  }
+  .portfolio__indandlove .text {
+    height: auto;
+  }
+  .portfolio__indandlove .text h3 {
+    font-size: 11px;
+  }
+  .portfolio__indandlove .text h2 {
+    font-size: 21px;
+  }
+  .portfolio__indandlove .text .pn p {
+    font-size: 13px;
+  }
+  .portfolio__cospandstud .stud .text {
+    height: auto;
+  }
+  .portfolio__cospandstud .stud .text h3 {
+    font-size: 11px;
+  }
+  .portfolio__cospandstud .stud .text h2 {
+    font-size: 21px;
+  }
+  .portfolio__cospandstud .stud .text .pn p {
+    font-size: 13px;
+  }
+  .price-services__middle p {
+    font-size: 16px;
+  }
+  .price-services__middle h3 {
+    font-size: 27px;
+  }
+}
+
 @media screen and (max-width: 378px) {
   .contact-block {
     grid-template-columns: 1fr;
