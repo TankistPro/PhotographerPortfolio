@@ -129,7 +129,7 @@
 
 @media screen and (max-width: 1150px) {
   .main-block {
-    background: url(../../img/bg-image.png) top right -150px no-repeat, #0F090B;
+    background: url(../../img/bg-vector.svg) -110px 40% no-repeat, url(../../img/bg-image.png) top right -280px no-repeat, #0F090B;
   }
 }
 
@@ -234,6 +234,9 @@
 }
 
 @media screen and (max-width: 870px) {
+  .main-block {
+    background: url(../../img/bg-vector.svg) -180px 40% no-repeat, url(../../img/bg-image.png) top right -310px no-repeat, #0F090B;
+  }
   .main-block .menu-burger__block {
     width: 100%;
     height: 100%;
@@ -247,6 +250,18 @@
 }
 
 @media screen and (max-width: 800px) {
+  .main-block {
+    background: url(../../img/bg-vector.svg) -100px 31%/292px no-repeat, url(../../img/bg-image.png) top -40px right -460px no-repeat, #0F090B;
+  }
+  .main-block {
+    height: 837px;
+  }
+  .main-block .menu {
+    padding-top: 47px;
+  }
+  .main-block .banner-block {
+    margin-top: 97px;
+  }
   .main-block .menu-items {
     justify-content: flex-end;
   }

@@ -4,12 +4,6 @@
     }
 }
 
-// @media screen and (max-width: 1626px){
-//     .qblock-content-stage {
-//         max-height: 247px;
-//     }
-// }
-
 @media screen and (max-width: 1580px){
     .contact-block {
         grid-template-columns: 1fr;
@@ -28,6 +22,7 @@
         }
 
         &__left {
+
             &-feedback {
                 width: 100%;
 
@@ -171,7 +166,8 @@
 
 @media screen and (max-width: 1150px) {
     .main-block {
-        background: url(../../img/bg-image.png) top right -150px no-repeat, #0F090B;
+        background: url(../../img/bg-vector.svg) -110px 40% no-repeat,
+        url(../../img/bg-image.png) top right -280px no-repeat, #0F090B;
     }
 }
 
@@ -185,6 +181,7 @@
     .qblock-content {
         grid-template-rows: none;
     }
+
     .main-block .menu-items {
         width: 100%;
         justify-content: space-evenly;
@@ -306,6 +303,10 @@
 
 
 @media screen and (max-width: 870px) {
+    .main-block {
+        background: url(../../img/bg-vector.svg) -180px 40% no-repeat, 
+        url(../../img/bg-image.png) top right -310px no-repeat, #0F090B;
+    }
     .main-block .menu-burger__block {
         width: 100%;
         height: 100%;
@@ -321,13 +322,31 @@
 }
 
 @media screen and (max-width: 800px) {
+    .main-block {
+        background: url(../../img/bg-vector.svg) -100px 31% /292px no-repeat, 
+        url(../../img/bg-image.png) top -40px right -460px no-repeat, #0F090B;
+    }
+
+    .main-block {
+        height: 837px;
+    }
+
+    .main-block .menu {
+        padding-top: 47px;
+    }
+
+    .main-block .banner-block {
+        margin-top: 97px;
+    }
+
     .main-block .menu-items {
         justify-content: flex-end;
     }
-    .menu-items__block.main {
 
+    .menu-items__block.main {
         display: none;
     }
+
     .portfolio {
         display: flex;
         flex-direction: column;
@@ -338,10 +357,13 @@
     .qblock-title__block {
         margin-bottom: 47px;
     }
+
     .qblock-title__block{
+
         &-subtitle{
             font-size: 2rem;
         }
+
         &-title{
             font-size: 2.7rem;
         }
@@ -350,9 +372,12 @@
 
 @media screen and (max-width: 650px) {
     .portfolio {
+
         &__main-page {
             height: 100vw;
+
             .middle{
+
                 & p {
                     font-size: 20px;
                 }
@@ -371,12 +396,15 @@
             & .text.ind {
                 order: 1;
             }
+
             & .photo.ind {
                 order: 2;
             }
+
             & .text.love {
                 order: 3;
             }
+
             & .photo.love {
                 order: 4;
             }
@@ -397,6 +425,7 @@
                 }
     
                 & .pn {
+
                     & p {
                         font-size: 20px;
                         margin-bottom: 10px;
@@ -405,7 +434,6 @@
             }
 
             & .photo {
-                // height: auto;
                 height: 100vw;
             }
         }
@@ -439,6 +467,7 @@
                 & .text {
                     order: 1;
                 }
+
                 & .photo {
                     order: 2;
                 }
@@ -467,7 +496,6 @@
                 }
     
                 & .photo {
-                    // height: auto;
                     height: 100vw;
                 }
             }
