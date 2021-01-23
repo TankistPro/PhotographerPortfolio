@@ -212,7 +212,7 @@
 
 .statistic-wrapper .static-block {
   flex-basis: 79%;
-  height: 250px;
+  min-height: 250px;
   border-radius: 15px;
   background-color: #ffffff;
   box-shadow: 0px 0px 36px rgba(15, 9, 11, 0.1);
@@ -227,6 +227,7 @@
   height: 100%;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .statistic-wrapper .static-block__content-item {
@@ -716,6 +717,7 @@
   color: #0F090B;
   text-transform: uppercase;
   font-weight: 600;
+  text-align: center;
 }
 
 .qblock-title__block-subtitle {
@@ -737,8 +739,8 @@
 
 .qblock-content__top, .qblock-content__middle, .qblock-content__bottom {
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
-  grid-template-rows: 226px;
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-rows: 1fr;
   align-items: center;
   overflow: hidden;
 }
@@ -750,6 +752,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  max-height: 226px;
 }
 
 .qblock-content-stage__step {
@@ -758,11 +761,11 @@
   justify-content: center;
   align-items: center;
   justify-content: center;
-  width: 60px;
   height: 60px;
   border-radius: 50%;
   border: 1px solid #FF6B00;
   margin: auto;
+  padding: 12px;
 }
 
 .qblock-content-stage__step.orange {
