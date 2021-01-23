@@ -747,37 +747,70 @@
     }
 
     &-content {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
 
-        &__left, &__right {
-            flex-basis: 40%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
+        &__top, &__middle, &__bottom {
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr;
+            grid-template-rows: 226px;
+            align-items: center;
+            overflow: hidden;
         }
 
-        &__left {
+        &-stage {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
 
+            &__step {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: 1px solid #FF6B00;
+                margin: auto;
+
+                &.orange {
+                    background-color:  #FF6B00;
+                    p {
+                        color: #ffffff;
+                    }
+                }
+
+                p {
+                    color: #FF6B00;
+                    font-size: 1.875rem;
+                    line-height: 36px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        &__top {
             .qblock-content {
-
                 &__q {
-                    margin-top: -10%;
+                    // margin-top: -10%;
                 }
             }
         }
 
         &__middle {
-            padding: 0 75px;
         }
 
-        &__right {
-            margin-top: 2%;
-            align-items: flex-start;
+        &__bottom {
 
             .qblock-content {
                 &__q, &__answer {
-                    text-align: left;
+                    
                 }
             }
         }
