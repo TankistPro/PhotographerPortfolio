@@ -319,6 +319,10 @@
   margin-top: 7%;
 }
 
+.portfolio__main-page .middle button:hover {
+  background-color: #FF6B00;
+}
+
 .portfolio__indandlove {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -336,7 +340,7 @@
 }
 
 .portfolio__indandlove .text {
-  background-color: #000;
+  background-color: #0F090B;
   padding: 132px 50px 142px 52px;
   box-sizing: border-box;
 }
@@ -392,6 +396,10 @@
   text-transform: uppercase;
   margin-top: 8%;
   margin-left: 22px;
+}
+
+.portfolio__indandlove .text button:hover {
+  background-color: #FF6B00;
 }
 
 .portfolio__photos {
@@ -462,7 +470,7 @@
 }
 
 .portfolio__cospandstud .stud .text {
-  background-color: #000;
+  background-color: #0F090B;
   padding: 132px 50px 142px 52px;
   box-sizing: border-box;
 }
@@ -518,6 +526,10 @@
   text-transform: uppercase;
   margin-top: 8%;
   margin-left: 22px;
+}
+
+.portfolio__cospandstud .stud .text button:hover {
+  background-color: #FF6B00;
 }
 
 .price-services {
@@ -984,4 +996,3 @@
   width: 29px;
   height: 29px;
 }
-/*# sourceMappingURL=style.css.map */
