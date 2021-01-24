@@ -321,6 +321,7 @@
 
 .portfolio__main-page .middle button:hover {
   background-color: #FF6B00;
+  color: #fff;
 }
 
 .portfolio__indandlove {
@@ -337,6 +338,10 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.portfolio__indandlove .photo:hover {
+  cursor: url("../../img/lupa.cur"), pointer;
 }
 
 .portfolio__indandlove .text {
@@ -400,6 +405,7 @@
 
 .portfolio__indandlove .text button:hover {
   background-color: #FF6B00;
+  color: #fff;
 }
 
 .portfolio__photos {
@@ -411,6 +417,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.portfolio__photos img:hover {
+  cursor: url("../../img/lupa.cur"), pointer;
 }
 
 .portfolio__cospandstud .cosp {
@@ -467,6 +477,10 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.portfolio__cospandstud .stud .photo:hover {
+  cursor: url("../../img/lupa.cur"), pointer;
 }
 
 .portfolio__cospandstud .stud .text {
@@ -530,6 +544,7 @@
 
 .portfolio__cospandstud .stud .text button:hover {
   background-color: #FF6B00;
+  color: #fff;
 }
 
 .price-services {
@@ -713,6 +728,10 @@
   line-height: 24px;
   color: #FFFFFF;
   text-transform: uppercase;
+}
+
+.price-services__middle__blocks .block button:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .qblock {
