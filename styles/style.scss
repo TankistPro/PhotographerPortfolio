@@ -761,9 +761,11 @@
                     line-height: 24px;
                     color: #FFFFFF;
                     text-transform: uppercase;
+                    transition: .3s all;
                 }
 
                 & button:hover {
+                    transition: .3s all;
                     transform:scale(1.1,1.1);
                 }
             }
@@ -849,7 +851,7 @@
                 p {
                     color: #FF6B00;
                     font-size: 1.875rem;
-                    line-height: 36px;
+                    line-height: 33px;
                     font-weight: 600;
                 }
             }
@@ -896,7 +898,6 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 26px;
-                text-align: justify;
                 font-size: 1.375rem;
             }
         }
@@ -951,6 +952,7 @@
 
             &__content-block {
                 margin-top: 60px;
+                max-width: 856px;
 
                 .feedback__input {
                     outline: none;
@@ -960,7 +962,7 @@
                     padding-bottom: 26px;
                     border-bottom: 2px solid #D1D1D1;
 
-                    color: #B7B7B7;
+                    color: #000000;
                     line-height: 29px;
                     font-size: 1.5625rem;
                     font-weight: 500;
@@ -975,6 +977,8 @@
 
                     &-message {
                         margin-top: 110px;
+                        height: 300px;
+                        max-height: 234px;
 
                         & label {
                             color: #B7B7B7;
@@ -985,7 +989,9 @@
                         .feedback__input {
                             padding-bottom: 0;
                             font-size: 1.25rem;
-
+                            min-width: 50%;
+                            max-height: 50%;
+                    
                             padding: 0 32px;
                             box-sizing: border-box;
                         }
@@ -1002,7 +1008,7 @@
                     cursor: pointer;
                     font-style: normal;
                     font-size: 1.875rem;
-                    margin-top: 120px;
+                    // margin-top: 120px;
                 }
             }
         }
