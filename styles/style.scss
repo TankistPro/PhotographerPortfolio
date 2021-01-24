@@ -154,13 +154,26 @@
                 display: flex;
                 align-items: center;
                 margin-left: 165px;
+
+                .social {
+                    transition: .3s all;
+                    width: 29px;
+                    height: 29px;
+                }
+
                 a {
+                    cursor: pointer;
                     &:last-child {
                         margin-left: 22px;
                     }
 
-                    img {
-                        cursor: pointer;
+                    &:hover {
+                        .social {
+                            & path {
+                                transition: .3s all;
+                                fill: #FF6B00;
+                            }
+                        }
                     }
                 }
             }
@@ -187,13 +200,14 @@
                     margin: 20px 0;
                 }
             }
-    
+
             .quote {
                 font-style: normal;
                 font-weight: 500;
                 line-height: 30px;
                 font-size: 1.875rem;
-                max-width: 1055px;
+                max-width: 805px;
+                text-align: justify;
             }
         }
 
@@ -208,6 +222,14 @@
             cursor: pointer;
             margin-top: 57px;
             outline: none;
+            text-transform: uppercase;
+            transition: .3s all;
+
+            &:hover {
+                transition: .3s all;
+                color: #ffffff;
+                background-color: #FF6B00;
+            }
         }
     }
 }
