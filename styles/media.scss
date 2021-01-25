@@ -376,28 +376,40 @@
 
 @media screen and (max-width: 710px) {
     .contact-block__right footer {
-        flex-wrap: wrap;
-    }
+        justify-content: space-around;
 
-    .contact-block__right footer .footer-block {
-        justify-content: space-between;
-        margin: 5px auto;
-        &__phone, &__email, &__city {
-            margin-left: 0;
+        & .footer-block {
+            padding: 5px 0;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: none;
+
+            & a, p {
+                margin-left: 0;
+                margin-bottom: 2px;
+            }
         }
     }
+
+    // .contact-block__right footer .footer-block {
+    //     justify-content: space-between;
+    //     margin: 5px auto;
+    //     &__phone, &__email, &__city {
+    //         margin-left: 0;
+    //     }
+    // }
 
     .contact-block__right img {
         display: none;
     }
 
-    .footer-block {
-        flex-wrap: wrap;
-    }
+    // .footer-block {
+    //     flex-wrap: wrap;
+    // }
 
-    .contact-block__right footer .footer-social {
-        flex-direction: row;
-    }
+    // .contact-block__right footer .footer-social {
+    //     flex-direction: row;
+    // }
 }
 
 @media screen and (max-width: 690px) {
