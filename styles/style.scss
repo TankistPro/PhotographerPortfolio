@@ -598,11 +598,21 @@
         display: flex;
         justify-content: flex-end;
         margin-bottom: 3px;
+        
+        & img {
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     &__left {
         display: flex;
         justify-content: flex-start;
+
+        & img {
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     &__middle {
