@@ -48,6 +48,7 @@
 
 .main-block .menu-burger__block .burger-close {
   cursor: pointer;
+  position: absolute;
 }
 
 .main-block .menu-burger__block .nav {
@@ -1044,3 +1045,4 @@
   width: 29px;
   height: 29px;
 }
+/*# sourceMappingURL=style.css.map */
