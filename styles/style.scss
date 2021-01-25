@@ -346,6 +346,7 @@
                 color: #000000;
                 text-transform: uppercase;
                 margin-top: 7%;
+                transition: .3s all;
             }
 
             & button:hover {
@@ -431,6 +432,7 @@
                 text-transform: uppercase;
                 margin-top: 8%;
                 margin-left: 22px;
+                transition: .3s all;
             }
 
             & button:hover {
@@ -571,6 +573,7 @@
                     text-transform: uppercase;
                     margin-top: 8%;
                     margin-left: 22px;
+                    transition: .3s all;
                 }
 
                 & button:hover {
@@ -595,11 +598,21 @@
         display: flex;
         justify-content: flex-end;
         margin-bottom: 3px;
+        
+        & img {
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     &__left {
         display: flex;
         justify-content: flex-start;
+
+        & img {
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     &__middle {
@@ -915,11 +928,11 @@
 // =================Contact-block ==================
 
 .contact-block {
-    display: grid;
+    display: flex;
     width: 90%;
     margin-right: 0;
     margin-left: auto;
-    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
 
     &__left {
 
