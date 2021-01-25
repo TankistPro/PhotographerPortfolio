@@ -48,6 +48,8 @@
                 
 
                 .burger-close {
+                    position: absolute;
+                    top: 9%;
                     cursor: pointer;
                 }
 
@@ -966,46 +968,68 @@
                 margin-top: 60px;
                 max-width: 856px;
 
-                .feedback__input {
-                    outline: none;
-                    max-width: 85%;
-                    width: 85%;
-                    border-style: none none solid none;
-                    padding-bottom: 26px;
-                    border-bottom: 2px solid #D1D1D1;
-
-                    color: #000000;
-                    line-height: 29px;
+                span {
                     font-size: 1.5625rem;
-                    font-weight: 500;
+                    color: #B7B7B7;
 
                     &:not(:first-child) {
                         margin-top: 50px;
                     }
+                }
 
-                    &::placeholder {
-                        color: #B7B7B7;
+                .feedback__item {
+                    position: relative;
+
+                    .feedback-label {
+                        pointer-events: none;
+                        position: absolute;
+                        top: 0px;
+                        left: 0;
                     }
 
-                    &-message {
-                        margin-top: 110px;
-                        height: 300px;
-                        max-height: 234px;
-
-                        & label {
-                            color: #B7B7B7;
-                            line-height: 29px;
-                            font-size: 1.5625rem;
+                    .feedback__input {
+                        outline: none;
+                        max-width: 85%;
+                        width: 85%;
+                        border-style: none none solid none;
+                        padding-bottom: 26px;
+                        border-bottom: 2px solid #D1D1D1;
+    
+                        color: #000000;
+                        line-height: 29px;
+                        font-size: 1.5625rem;
+                        font-weight: 500;
+    
+                        &:not(:first-child) {
+                            margin-top: 50px;
                         }
 
-                        .feedback__input {
-                            padding-bottom: 0;
-                            font-size: 1.25rem;
-                            min-width: 50%;
-                            max-height: 50%;
-                    
-                            padding: 0 32px;
-                            box-sizing: border-box;
+                        &:focus {
+                           ~.feedback-label {
+                               color: red;
+                           }
+                        }
+
+                        &-message {
+                            margin-top: 110px;
+                            height: 300px;
+                            max-height: 234px;
+    
+                            & label {
+                                color: #B7B7B7;
+                                line-height: 29px;
+                                font-size: 1.5625rem;
+                            }
+    
+                            .feedback__input {
+                                padding-bottom: 0;
+                                font-size: 1.25rem;
+                                min-width: 50%;
+                                max-height: 50%;
+                        
+                                padding: 0 32px;
+                                box-sizing: border-box;
+                            }
                         }
                     }
                 }

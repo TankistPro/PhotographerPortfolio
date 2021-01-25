@@ -47,6 +47,8 @@
 }
 
 .main-block .menu-burger__block .burger-close {
+  position: absolute;
+  top: 9%;
   cursor: pointer;
 }
 
@@ -913,7 +915,27 @@
   max-width: 856px;
 }
 
-.contact-block__left-feedback__content-block .feedback__input {
+.contact-block__left-feedback__content-block span {
+  font-size: 1.5625rem;
+  color: #B7B7B7;
+}
+
+.contact-block__left-feedback__content-block span:not(:first-child) {
+  margin-top: 50px;
+}
+
+.contact-block__left-feedback__content-block .feedback__item {
+  position: relative;
+}
+
+.contact-block__left-feedback__content-block .feedback__item .feedback-label {
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.contact-block__left-feedback__content-block .feedback__item .feedback__input {
   outline: none;
   max-width: 85%;
   width: 85%;
@@ -926,27 +948,27 @@
   font-weight: 500;
 }
 
-.contact-block__left-feedback__content-block .feedback__input:not(:first-child) {
+.contact-block__left-feedback__content-block .feedback__item .feedback__input:not(:first-child) {
   margin-top: 50px;
 }
 
-.contact-block__left-feedback__content-block .feedback__input::placeholder {
-  color: #B7B7B7;
+.contact-block__left-feedback__content-block .feedback__item .feedback__input:focus ~ .feedback-label {
+  color: red;
 }
 
-.contact-block__left-feedback__content-block .feedback__input-message {
+.contact-block__left-feedback__content-block .feedback__item .feedback__input-message {
   margin-top: 110px;
   height: 300px;
   max-height: 234px;
 }
 
-.contact-block__left-feedback__content-block .feedback__input-message label {
+.contact-block__left-feedback__content-block .feedback__item .feedback__input-message label {
   color: #B7B7B7;
   line-height: 29px;
   font-size: 1.5625rem;
 }
 
-.contact-block__left-feedback__content-block .feedback__input-message .feedback__input {
+.contact-block__left-feedback__content-block .feedback__item .feedback__input-message .feedback__input {
   padding-bottom: 0;
   font-size: 1.25rem;
   min-width: 50%;
