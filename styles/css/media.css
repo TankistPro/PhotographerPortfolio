@@ -6,7 +6,7 @@
 
 @media screen and (max-width: 1580px) {
   .contact-block {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     width: 85%;
     margin: 0 auto;
   }
@@ -531,4 +531,3 @@
     grid-template-columns: 1fr;
   }
 }
-/*# sourceMappingURL=media.css.map */

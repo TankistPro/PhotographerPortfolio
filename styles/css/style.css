@@ -337,6 +337,7 @@
   color: #000000;
   text-transform: uppercase;
   margin-top: 7%;
+  transition: .3s all;
 }
 
 .portfolio__main-page .middle button:hover {
@@ -421,6 +422,7 @@
   text-transform: uppercase;
   margin-top: 8%;
   margin-left: 22px;
+  transition: .3s all;
 }
 
 .portfolio__indandlove .text button:hover {
@@ -560,6 +562,7 @@
   text-transform: uppercase;
   margin-top: 8%;
   margin-left: 22px;
+  transition: .3s all;
 }
 
 .portfolio__cospandstud .stud .text button:hover {
@@ -870,11 +873,11 @@
 }
 
 .contact-block {
-  display: grid;
+  display: flex;
   width: 90%;
   margin-right: 0;
   margin-left: auto;
-  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
 }
 
 .contact-block__left form label, .contact-block__left form input {
@@ -1040,4 +1043,3 @@
   width: 29px;
   height: 29px;
 }
-/*# sourceMappingURL=style.css.map */
