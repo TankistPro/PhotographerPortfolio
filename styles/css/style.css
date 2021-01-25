@@ -584,19 +584,9 @@
   margin-bottom: 3px;
 }
 
-.price-services__right img {
-  width: 100%;
-  object-fit: cover;
-}
-
 .price-services__left {
   display: flex;
   justify-content: flex-start;
-}
-
-.price-services__left img {
-  width: 100%;
-  object-fit: cover;
 }
 
 .price-services__middle {
@@ -952,6 +942,7 @@
   font-size: 1.25rem;
   min-width: 50%;
   max-height: 50%;
+  max-width: 100%;
   padding: 0 32px;
   box-sizing: border-box;
 }

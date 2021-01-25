@@ -391,25 +391,9 @@
         }
     }
 
-    // .contact-block__right footer .footer-block {
-    //     justify-content: space-between;
-    //     margin: 5px auto;
-    //     &__phone, &__email, &__city {
-    //         margin-left: 0;
-    //     }
-    // }
-
     .contact-block__right img {
         display: none;
     }
-
-    // .footer-block {
-    //     flex-wrap: wrap;
-    // }
-
-    // .contact-block__right footer .footer-social {
-    //     flex-direction: row;
-    // }
 }
 
 @media screen and (max-width: 700px) {
@@ -732,5 +716,17 @@
 @media screen and (max-width: 378px) {
     .contact-block {
         grid-template-columns: 1fr;
+    }
+
+    .price-services {    
+        &__right img{            
+            width: 100%;
+            object-fit: cover;
+        }
+    
+        &__left img{            
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }
