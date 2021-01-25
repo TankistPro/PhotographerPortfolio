@@ -392,14 +392,15 @@
         justify-content: space-around;
 
         & .footer-block {
-            padding: 5px 0;
+            padding: 8px 0 0 0;
             flex-direction: column;
             align-items: flex-start;
             flex: none;
 
             & a, p {
                 margin-left: 0;
-                margin-bottom: 2px;
+                margin-bottom: 5px;
+                
             }
         }
     }

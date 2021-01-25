@@ -306,14 +306,14 @@
     justify-content: space-around;
   }
   .contact-block__right footer .footer-block {
-    padding: 5px 0;
+    padding: 8px 0 0 0;
     flex-direction: column;
     align-items: flex-start;
     flex: none;
   }
   .contact-block__right footer .footer-block a, .contact-block__right footer .footer-block p {
     margin-left: 0;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
   }
   .contact-block__right img {
     display: none;
