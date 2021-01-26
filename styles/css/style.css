@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/test/gilroy-regular.ttf");
+  src: url("../fonts/Gilroy-Regular.ttf");
 }
 
 * {
@@ -909,10 +909,22 @@
 }
 
 .contact-block__left-feedback__content-block .feedback__item .feedback-label {
+  pointer-events: none;
   position: absolute;
   top: 0;
   color: #B7B7B7;
   font-size: 1.5625rem;
+  transition: .4s all;
+}
+
+.contact-block__left-feedback__content-block .feedback__item .feedback__input:not(:focus):valid ~ .feedback-label,
+.contact-block__left-feedback__content-block .feedback__item .feedback__input:focus ~ .feedback-label {
+  font-size: 1.2rem;
+  top: -50%;
+}
+
+.contact-block__left-feedback__content-block .feedback__item:not(:first-child) {
+  margin-top: 50px;
 }
 
 .contact-block__left-feedback__content-block .feedback__input {

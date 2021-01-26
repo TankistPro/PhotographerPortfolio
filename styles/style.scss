@@ -936,11 +936,25 @@
 
                 .feedback__item {
                     position: relative;
+
                     .feedback-label {
+                        pointer-events: none;
                         position: absolute;
                         top: 0;
                         color: #B7B7B7;
                         font-size: 1.5625rem;
+                        transition: .4s all;
+                    }
+                    
+                    .feedback__input:not(:focus):valid~.feedback-label,
+                    .feedback__input:focus~.feedback-label{
+                        font-size: 1.2rem;
+                        // transition: .4s all;
+                        top: -50%;
+                    }
+
+                    &:not(:first-child) {
+                        margin-top: 50px;
                     }
                 }
 
