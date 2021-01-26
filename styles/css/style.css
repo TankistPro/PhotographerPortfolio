@@ -904,6 +904,17 @@
   max-width: 856px;
 }
 
+.contact-block__left-feedback__content-block .feedback__item {
+  position: relative;
+}
+
+.contact-block__left-feedback__content-block .feedback__item .feedback-label {
+  position: absolute;
+  top: 0;
+  color: #B7B7B7;
+  font-size: 1.5625rem;
+}
+
 .contact-block__left-feedback__content-block .feedback__input {
   outline: none;
   max-width: 85%;

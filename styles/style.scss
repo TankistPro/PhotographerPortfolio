@@ -934,6 +934,16 @@
                 margin-top: 60px;
                 max-width: 856px;
 
+                .feedback__item {
+                    position: relative;
+                    .feedback-label {
+                        position: absolute;
+                        top: 0;
+                        color: #B7B7B7;
+                        font-size: 1.5625rem;
+                    }
+                }
+
                 .feedback__input {
                     outline: none;
                     max-width: 85%;
