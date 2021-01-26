@@ -1,12 +1,12 @@
 @font-face {
-  font-family: Gilroy;
-  src: url("../fonts/Gilroy-Regular.ttf");
+  font-family: "Gilroy";
+  src: url("../fonts/test/gilroy-regular.ttf");
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", sans-serif;
 }
 
 .orange {
@@ -799,7 +799,6 @@
   grid-template-columns: 3fr 1fr 3fr;
   grid-template-rows: 1fr;
   align-items: center;
-  overflow: hidden;
 }
 
 .qblock-content-stage {
@@ -908,7 +907,7 @@
 .contact-block__left-feedback__content-block .feedback__input {
   outline: none;
   max-width: 85%;
-  width: 85%;
+  width: 100%;
   border-style: none none solid none;
   padding-bottom: 26px;
   border-bottom: 2px solid #D1D1D1;
