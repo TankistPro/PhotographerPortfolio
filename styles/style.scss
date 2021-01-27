@@ -331,11 +331,12 @@
                 }
             }
 
-            & button {
+            & a {
                 outline: none;
                 border: none;
-                width: 192px;
-                height: 61px;
+                text-decoration: none;
+                // width: 192px;
+                // height: 61px;
                 padding: 18.5px 45px;
                 background: #FFFFFF;
                 border-radius: 10px;
@@ -350,7 +351,7 @@
                 transition: .3s all;
             }
 
-            & button:hover {
+            & a:hover {
                 background-color: #FF6B00;
                 color: #fff;
             }
@@ -994,7 +995,6 @@
                             padding-bottom: 0;
                             font-size: 1.25rem;
                             min-width: 100%;
-                            min-height: 30%;
                             max-height: 45%;
                             max-width: 100%;
                     

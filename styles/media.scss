@@ -749,7 +749,7 @@
 }
 
 @media screen and (max-width: 430px) {
-    .price-services__middle__blocks .block button {
+    .price-services__middle__blocks .block a {
         margin-left: 2%;
         width: 90%;
         font-size: 1rem;
@@ -766,7 +766,7 @@
         padding: 16px 32px;
     }
 
-    .portfolio__main-page .middle button {
+    .portfolio__main-page .middle a {
         font-size: 1rem;
         font-weight: 500;
         padding: 12px 28px;

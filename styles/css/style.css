@@ -323,11 +323,10 @@
   color: #FF6B00;
 }
 
-.portfolio__main-page .middle button {
+.portfolio__main-page .middle a {
   outline: none;
   border: none;
-  width: 192px;
-  height: 61px;
+  text-decoration: none;
   padding: 18.5px 45px;
   background: #FFFFFF;
   border-radius: 10px;
@@ -341,7 +340,7 @@
   transition: .3s all;
 }
 
-.portfolio__main-page .middle button:hover {
+.portfolio__main-page .middle a:hover {
   background-color: #FF6B00;
   color: #fff;
 }
@@ -966,7 +965,6 @@
   padding-bottom: 0;
   font-size: 1.25rem;
   min-width: 100%;
-  min-height: 30%;
   max-height: 45%;
   max-width: 100%;
   padding: 0 32px;
@@ -1070,4 +1068,3 @@
   width: 29px;
   height: 29px;
 }
-/*# sourceMappingURL=style.css.map */
