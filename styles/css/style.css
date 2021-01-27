@@ -451,6 +451,7 @@
   padding: 264px 178px 296px 254px;
   box-sizing: border-box;
   display: flex;
+  cursor: pointer;
 }
 
 .portfolio__cospandstud .cosp p {
@@ -756,7 +757,7 @@
 
 .price-services__middle__blocks .block button:hover {
   transition: .3s all;
-  transform: scale(1.1, 1.1);
+  font-size: 23px;
 }
 
 .qblock {
@@ -1067,4 +1068,25 @@
 .contact-block__right footer .footer-social img {
   width: 29px;
   height: 29px;
+}
+
+.openImg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: rgba(0, 0, 0, 0.952);
+  cursor: auto !important;
+}
+
+.openImg img {
+  z-index: 1;
+  position: fixed;
+  left: 30%;
+  top: 10%;
+  width: 40% !important;
+  height: 80% !important;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
 }
