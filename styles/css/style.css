@@ -1088,13 +1088,13 @@
 }
 
 .openImg img {
-  transition: .6s all;
   z-index: 2;
   position: fixed;
-  left: 30%;
   top: 10%;
+  right: 30%;
+  transition: .6s all;
   width: 40% !important;
   height: 80% !important;
   cursor: pointer;
-  object-fit: contain;
+  object-fit: contain !important;
 }
