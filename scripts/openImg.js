@@ -6,6 +6,11 @@ for (let i = 0; i<listImg.length; i++) {
 }
 
 function openImg(el) {
-    console.log(el);
-    el.classList.add("openList");
+    let parent = el.parentElement;
+    if (parent.classList.contains('openImg')) {
+        parent.classList.remove("openImg");
+    } else {
+        parent.classList.add("openImg");
+    }
+    
 }
