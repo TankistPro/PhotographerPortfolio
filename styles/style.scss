@@ -1137,4 +1137,8 @@
         cursor: pointer;
         object-fit: contain !important;
     }
+
+    & img:hover {
+        cursor: url("../../img/lupa-.cur"), pointer;
+    }
 }

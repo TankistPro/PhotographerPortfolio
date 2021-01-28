@@ -1,3 +1,21 @@
+@media screen and (max-width: 4000px) {
+  .portfolio__cospandstud .cosp {
+    height: 50%;
+  }
+  .portfolio__cospandstud .stud {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .portfolio__cospandstud .cosp {
+    height: auto;
+  }
+  .portfolio__cospandstud .stud {
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 1741px) {
   .qblock-content-stage {
     max-height: 247px;

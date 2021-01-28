@@ -1098,3 +1098,7 @@
   cursor: pointer;
   object-fit: contain !important;
 }
+
+.openImg img:hover {
+  cursor: url("../../img/lupa-.cur"), pointer;
+}
