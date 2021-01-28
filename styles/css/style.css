@@ -1102,3 +1102,11 @@
 .openImg img:hover {
   cursor: url("../../img/lupa-.cur"), pointer;
 }
+
+.closeImg {
+  transition: .6s all;
+}
+
+.closeImg img {
+  transition: .6s all;
+}
