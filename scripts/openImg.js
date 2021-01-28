@@ -7,9 +7,14 @@ for (let i = 0; i<listImg.length; i++) {
 
 function openImg(el) {
     let parent = el.parentElement;
+    let iden = el.name;
     if (parent.classList.contains('openImg')) {
+        el.src = `./img/portfolio/${iden}.png`;
+        parent.classList.add("closeImg");
         parent.classList.remove("openImg");
     } else {
+        parent.classList.remove("closeImg");
+        el.src = `./img/sources/${iden}.jpg`;
         parent.classList.add("openImg");
     }
     

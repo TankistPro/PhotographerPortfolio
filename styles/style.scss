@@ -1142,3 +1142,11 @@
         cursor: url("../../img/lupa-.cur"), pointer;
     }
 }
+
+.closeImg {
+    transition: .6s all;
+
+    & img {
+        transition: .6s all;
+    }
+}
