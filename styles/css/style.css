@@ -348,6 +348,7 @@
 .portfolio__indandlove {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: #0F090B;
 }
 
 .portfolio__indandlove .photo {
@@ -433,6 +434,7 @@
 .portfolio__photos {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: #0F090B;
 }
 
 .portfolio__photos img {
@@ -446,6 +448,7 @@
 }
 
 .portfolio__cospandstud .cosp {
+  height: 50%;
   background-image: url("../../img/portfolio/cosp-bg.png");
   background-size: cover;
   padding: 264px 178px 296px 254px;
@@ -489,6 +492,8 @@
 .portfolio__cospandstud .stud {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 50%;
+  background-color: #0F090B;
 }
 
 .portfolio__cospandstud .stud .photo {
@@ -1071,24 +1076,25 @@
 }
 
 .openImg {
+  transition: .6s all;
   z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
   width: 100% !important;
   height: 100% !important;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.822);
   cursor: auto !important;
 }
 
 .openImg img {
+  transition: .6s all;
   z-index: 2;
   position: fixed;
   left: 30%;
   top: 10%;
   width: 40% !important;
   height: 80% !important;
-  box-shadow: 0 30px 60px rgba(255, 255, 255, 0.25), 0 5px 90px rgba(255, 255, 255, 0.22);
   cursor: pointer;
   object-fit: contain;
 }
