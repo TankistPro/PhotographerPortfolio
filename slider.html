@@ -39,7 +39,7 @@
 
 <body>
 	<div class="slider-wrapper">
-		<div id="gallery" style="display:none;">
+		<div id="gallery" style="display:none; margin: auto;">
 	
 			<img alt="Preview Image 1"
 				 src="./slider/slider-img/img-1.jpg"
@@ -76,11 +76,12 @@
 	</div>
 	
 	<script type="text/javascript">
-        let api = null;
+		let api = null;
 		jQuery(document).ready(function(){
 
-			api = jQuery("#gallery").unitegallery();
-
+			api = jQuery("#gallery").unitegallery();	
+			api.resize(1625)
+			// api.enterFullscreen()	
 		});
 		
 	</script>
