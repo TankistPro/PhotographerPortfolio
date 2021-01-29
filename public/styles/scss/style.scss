@@ -418,11 +418,15 @@
                 }
             }
 
-            & button {
+            & a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
                 outline: none;
                 border: none;
-                width: 123px;
-                height: 39px;
+                width: 99px;
+                height: 27px;
                 padding: 11.5px 25.5px;
                 background: #FFFFFF;
                 border-radius: 5px;
@@ -438,7 +442,7 @@
                 transition: .3s all;
             }
 
-            & button:hover {
+            & a:hover {
                 background-color: #FF6B00;
                 color: #fff;
             }
@@ -564,11 +568,16 @@
                     }
                 }
     
-                & button {
+                & a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    text-decoration: none;
                     outline: none;
                     border: none;
-                    width: 123px;
-                    height: 39px;
+                    width: 99px;
+                    height: 27px;
                     padding: 11.5px 25.5px;
                     background: #FFFFFF;
                     border-radius: 5px;
@@ -584,7 +593,7 @@
                     transition: .3s all;
                 }
 
-                & button:hover {
+                & a:hover {
                     background-color: #FF6B00;
                     color: #fff;
                 }
