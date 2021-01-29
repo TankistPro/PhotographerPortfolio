@@ -1,4 +1,4 @@
-@import "./font.scss";
+@import "font";
 
 * {
     margin: 0;
@@ -14,8 +14,8 @@
 
 .main-block {
     height: 1080px;
-    background:  url("../../img/bg-vector.svg") left 40% no-repeat,
-                 url("../../img/bg-image.png")  right no-repeat,
+    background:  url("/img/bg-vector.svg") left 40% no-repeat,
+                 url("/img/bg-image.png")  right no-repeat,
                  #0F090B;
 
     .menu {
@@ -98,7 +98,7 @@
                         text-decoration: none;
 
                         &:before {
-                            content: url('../../img/email-icon.svg');
+                            content: url('/img/email-icon.svg');
                             width: 29px;
                             height: 29px;
                             vertical-align: middle;
@@ -133,7 +133,7 @@
                     text-decoration: none;
 
                     &::before {
-                        content: url('../../img/phone.svg');
+                        content: url('/img/phone.svg');
 
                     }
 
@@ -146,7 +146,7 @@
                     margin-left: 48px;
 
                     &::before {
-                        content: url('../../img/city.svg');
+                        content: url('/img/city.svg');
                     }
                 }
             }
@@ -289,7 +289,7 @@
     }
 
     &__main-page {
-        background-image: url("../../img/portfolio/prt-main-page.png");
+        background-image: url("/img/portfolio/prt-main-page.png");
         background-size: cover;
         padding: 13% 12%;
         display: flex;
@@ -375,7 +375,7 @@
         }
 
         & .photo:hover {
-            cursor: url("../../img/lupa.cur"), pointer;
+            cursor: url("/img/lupa.cur"), pointer;
         }
 
         & .text {
@@ -457,14 +457,14 @@
         }
 
         & img:hover {
-            cursor: url("../../img/lupa.cur"), pointer;
+            cursor: url("/img/lupa.cur"), pointer;
         }
     }
 
     &__cospandstud {
         & .cosp {
             height: 50%;
-            background-image: url("../../img/portfolio/cosp-bg.png");
+            background-image: url("/img/portfolio/cosp-bg.png");
             background-size: cover;
             padding: 264px 178px 296px 254px;
             box-sizing: border-box;
@@ -521,7 +521,7 @@
             }
 
             & .photo:hover {
-                cursor: url("../../img/lupa.cur"), pointer;
+                cursor: url("/img/lupa.cur"), pointer;
             }
     
             & .text {
@@ -684,7 +684,7 @@
                     position: absolute;
                     top: 0;
                     right: 0;
-                    background-image: url("../../img/price-services/line.svg");
+                    background-image: url("/img/price-services/line.svg");
                     width: 106px;
                     height: 106px;
 
@@ -1067,7 +1067,7 @@
                     text-decoration: none;
 
                     &::before {
-                        content: url('../../img/phone.svg');
+                        content: url('/img/phone.svg');
 
                     }
 
@@ -1080,7 +1080,7 @@
                     margin-left: 50px;
 
                     &::before {
-                        content: url('../../img/city.svg');
+                        content: url('/img/city.svg');
                     }
                 }
 
@@ -1092,7 +1092,7 @@
                     text-decoration: none;
 
                     &:before {
-                        content: url('../../img/email-icon.svg');
+                        content: url('/img/email-icon.svg');
                         width: 29px;
                         height: 29px;
                         vertical-align: middle;
@@ -1139,7 +1139,7 @@
     }
 
     & img:hover {
-        cursor: url("../../img/lupa-.cur"), pointer;
+        cursor: url("/img/lupa-.cur"), pointer;
     }
 }
 
