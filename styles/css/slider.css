@@ -2,6 +2,23 @@
   margin: 0 auto;
 }
 
+body {
+  position: relative;
+}
+
+.close-slider {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  z-index: 10;
+  opacity: 0.5;
+  transition: .3s all;
+}
+
+.close-slider:hover {
+  opacity: 1;
+}
+
 .galleria {
   width: 100%;
   height: 100vh;
