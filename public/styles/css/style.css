@@ -400,7 +400,6 @@
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        text-decoration: none;
         outline: none;
         border: none;
         width: 99px;
@@ -705,9 +704,9 @@
             line-height: 29px;
             font-size: 1.5625rem; }
           .contact-block__left-feedback__content-block .feedback__input-message .feedback__input {
-            padding-bottom: 0;
             font-size: 1.25rem;
             min-width: 100%;
+            min-height: 20%;
             max-height: 45%;
             max-width: 100%;
             padding: 0 32px;
