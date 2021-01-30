@@ -1,15 +1,14 @@
 const express = require("express");
 const router = express.Router();
-const path = require('path');
+const { getSlider } = require("../controllers/sliderController");
+
 
 router.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname + "/../views/index.html"))
+  res.render('index', {
+    title: "Главная страница"
+  })
 })
 
-router.get("/slider/:filter", ((req, res) => {
-  const filter = req.params['filter'];
-  console.log(filter);
-  res.sendFile(path.join(__dirname + "/../views/slider.html"));
-}))
+router.get("/slider/:filter", getSlider);
 
 module.exports = router;

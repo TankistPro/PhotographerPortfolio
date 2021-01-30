@@ -3,6 +3,8 @@ const app = express();
 const PORT = process.env.port || 3000;
 const routes = require('./routes/servers.js');
 
+app.set('view engine', 'ejs');
+
 app.use("/", routes)
 app.use(express.static(__dirname + "/public"));
 
