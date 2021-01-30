@@ -613,7 +613,8 @@
         .qblock-content-stage__step.orange {
           background-color: #FF6B00; }
           .qblock-content-stage__step.orange p {
-            color: #ffffff; }
+            color: #ffffff;
+            padding: 0 2px; }
         .qblock-content-stage__step p {
           color: #FF6B00;
           font-size: 1.875rem;
