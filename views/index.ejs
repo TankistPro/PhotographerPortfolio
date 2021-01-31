@@ -335,23 +335,23 @@
                     <p class="feedback__subtitle">Я ГОТОВ ВАМ ПОМОЧЬ!</p>
                     <p class="feedback__title">ЗАДАЙТЕ СВОЙ ВОПРОС</p>
                 </div>
-                <form class="contact-block__left-feedback__content-block" action="">
+                <form class="contact-block__left-feedback__content-block" action="/" method="post">
                     <div class="feedback__item">
-                        <input type="text" class="feedback__input" required>
+                        <input type="text" class="feedback__input" name="userName" required>
                         <span class="feedback-label">Имя</span>
                     </div>
                     <div class="feedback__item">
-                        <input type="text" class="feedback__input" required>
+                        <input type="text" class="feedback__input" name="email" required>
                         <span class="feedback-label">Email</span>
                     </div>
                     <div class="feedback__item">
-                        <input type="text" class="feedback__input" required>
+                        <input type="text" class="feedback__input" name="subject" required>
                         <span class="feedback-label">Тема</span>
                     </div>
                     <div class="feedback__item">
                         <div class="feedback__input-message">
                             <label for="feedback-message">Сообщение</label>
-                            <textarea class="feedback__input" rows="1" id="feedback-message" placeholder="Введите сообщение..."></textarea>
+                            <textarea class="feedback__input" rows="1" name="message" id="feedback-message" placeholder="Введите сообщение..."></textarea>
                         </div>
                     </div>
                     <button class="feedback-btn">Отправить</button>

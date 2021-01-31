@@ -3,7 +3,12 @@ const app = express();
 const PORT = process.env.port || 3000;
 const routes = require('./routes/servers.js');
 
+const bodyParser = require('body-parser');
+
 app.set('view engine', 'ejs');
+
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.json());
 
 app.use("/", routes)
 app.use(express.static(__dirname + "/public"));
