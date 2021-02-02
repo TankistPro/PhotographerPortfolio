@@ -13,7 +13,6 @@ module.exports.sendMail = async (req) => {
   })
 
   let message = mailConfig.mailMessage(req);
-  console.log(message);
 
   await transporter.sendMail({
     from: '"PortfolioWEB-SITE" <' + mailConfig.from.email+ '>',

@@ -721,7 +721,8 @@
         border: none;
         cursor: pointer;
         font-style: normal;
-        font-size: 1.875rem; }
+        font-size: 1.875rem;
+        outline: none; }
   .contact-block__right {
     max-width: 856px;
     display: flex;
