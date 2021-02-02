@@ -7,7 +7,7 @@ module.exports.getSlider = (req, res) => {
   photoKeys.forEach(key => {
     if (key === filter) {
       paths = slideConfig.photos[key].slice();
-      console.log(slideConfig.photos[key]);
+      // console.log(slideConfig.photos[key]);
     }
   })
   for (let i = 0; i < paths.length; i++) {
