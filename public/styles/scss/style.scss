@@ -1224,11 +1224,19 @@
                 padding-bottom: 16px;
             }
 
+            .modal-block__item__input:not(:focus):valid~.modal-block__item-label,
+            .modal-block__item__input:focus~.modal-block__item-label{
+                font-size: 1.2rem;
+                transition: .4s all;
+                top: -52%;
+            }
+
             &-label {
                 position: absolute;
                 top: 0;
                 left: 0;
                 color: #7D7D7D;
+                transition: .4s all;
             }
 
             &-btn {
@@ -1248,15 +1256,15 @@
                 transition: .4s all;
                 -webkit-backface-visibility: hidden;
 
-                &:hover {
-                    transition: .4s all;
-                    transform: scale(1.03);
-                    -webkit-transform:  scale(1.03);
-                    -moz-transform:  scale(1.03);
-                    -o-transform:  scale(1.03);
-                    -ms-transform:  scale(1.03);
-                    -webkit-backface-visibility: hidden;
-                }
+                //&:hover {
+                //    transition: .4s all;
+                //    transform: scale(1.03);
+                //    -webkit-transform:  scale(1.03);
+                //    -moz-transform:  scale(1.03);
+                //    -o-transform:  scale(1.03);
+                //    -ms-transform:  scale(1.03);
+                //    -webkit-backface-visibility: hidden;
+                //}
             }
         }
     }
