@@ -220,7 +220,7 @@
                             <p>СРОК СДАЧИ: 15 ДНЕЙ</p>
                         </div>
                     </div>
-                    <button>ЗАКАЗАТЬ СЪЕМКУ</button>
+                    <button class="order-btn">ЗАКАЗАТЬ СЪЕМКУ</button>
                 </div>
                 <div class="block love wow zoomIn">
                     <div class="special"><p>SPECIAL</p></div>
@@ -253,7 +253,7 @@
                             <p>СРОК СДАЧИ: 15 ДНЕЙ</p>
                         </div>
                     </div>
-                    <button>ЗАКАЗАТЬ СЪЕМКУ</button>
+                    <button class="order-btn">ЗАКАЗАТЬ СЪЕМКУ</button>
                 </div>
                 <div class="block stud wow slideInRight">
                     <h3>Studio</h3>
@@ -281,7 +281,7 @@
                             <p>СРОК СДАЧИ: 15 ДНЕЙ</p>
                         </div>
                     </div>
-                    <button>ЗАКАЗАТЬ СЪЕМКУ</button>
+                    <button class="order-btn">ЗАКАЗАТЬ СЪЕМКУ</button>
                 </div>
             </div>
         </div>
@@ -399,8 +399,26 @@
             </footer>
         </div>
     </div>
+    <div class="modal-wrapper">
+        <div class="modal-block">
+            <img src="/img/popup/close.svg" class="modal-block__close" alt="close">
+            <p class="modal-block__title">Оставьте Ваши конакты и я обязательно с Вами свяжусь!</p>
+            <form action="">
+                <div class="modal-block__item">
+                    <input type="text" class="modal-block__item__input" name="userName" autocomplete="off" required >
+                    <span class="modal-block__item-label">Ваше имя</span>
+                </div>
+                <div class="modal-block__item">
+                    <input type="text" class="modal-block__item__input" name="userName" autocomplete="off" required>
+                    <span class="modal-block__item-label">Ваш телефон</span>
+                </div>
+                <input type="submit" value="Заказать съемку" class="modal-block__item-btn">
+            </form>
+        </div>
+    </div>
     <script src="/scripts/openMenuBurger.js"></script>
     <script src="/scripts/openImg.js"></script>
     <script src="/scripts/sendForm.js"></script>
+    <script src="/scripts/orderPopup.js"></script>
 </body>
 </html>
