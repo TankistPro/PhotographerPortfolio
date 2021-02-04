@@ -1,5 +1,6 @@
 async function checkResponse(response) {
   if(response.type === "success") {
+    console.log("OK")
     document.forms["clientForm"].reset();
   }
   alert(response.message);

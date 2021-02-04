@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { getSlider } = require("../controllers/sliderController");
-const { sendFormData } = require("../controllers/formController")
+const { sendFormData, sendOrder } = require("../controllers/formController")
 const { formValidate } = require("../validators/formValidator");
 
 
@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
 })
 
 router.post("/", formValidate ,sendFormData);
-
+router.post('/order', sendOrder)
 router.get("/slider/:filter", getSlider);
 
 module.exports = router;

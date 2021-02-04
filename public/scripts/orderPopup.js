@@ -1,3 +1,29 @@
+async function checkResponseOrder(response) {
+  if(response.type === "success") {
+    document.forms["orderPopup"].reset();
+  }
+  alert(response.message);
+}
+
+async function sendOrder(event) {
+  event.preventDefault();
+
+  const data = {
+    userName: document.forms['orderPopup'].elements['userName'].value,
+    phone: document.forms['orderPopup'].elements['userPhone'].value,
+  }
+
+  await fetch('/order', {
+    method: "POST",
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  }).then(data => data.json())
+      .then(res => checkResponseOrder(res));
+}
+
 const modalWrapper = document.querySelector(".modal-wrapper"),
     orderBtn = document.querySelectorAll('.order-btn'),
     closeOrder = document.querySelector('.modal-block__close'),
@@ -14,11 +40,3 @@ closeOrder.addEventListener('click', () => {
   modalWrapper.style.display = 'none';
   body.style.overflow = 'auto';
 })
-
-function sendOrder(event) {
-  event.preventDefault();
-
-  const userName = document.forms['orderPopup'].elements['userName'].value,
-      phone = document.forms['orderPopup'].elements['userPhone'].value;
-
-}

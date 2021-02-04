@@ -353,7 +353,7 @@
                     <p class="feedback__subtitle">Я ГОТОВ ВАМ ПОМОЧЬ!</p>
                     <p class="feedback__title">ЗАДАЙТЕ СВОЙ ВОПРОС</p>
                 </div>
-                <form id="clientForm" class="contact-block__left-feedback__content-block wow fadeInRight" onsubmit="sendData(event)">
+                <form id="clientForm" class="contact-block__left-feedback__content-block wow fadeInRight" method="post" onsubmit="sendData(event)">
                     <div class="feedback__item">
                         <input type="text" class="feedback__input" name="userName" required>
                         <span class="feedback-label">Имя</span>
@@ -403,7 +403,7 @@
         <div class="modal-block">
             <img src="/img/popup/close.svg" class="modal-block__close" alt="close">
             <p class="modal-block__title">Оставьте Ваши конакты и я обязательно с Вами свяжусь!</p>
-            <form id="orderPopup" onsubmit="sendOrder(event)">
+            <form method="post" id="orderPopup" onsubmit="sendOrder(event)">
                 <div class="modal-block__item">
                     <input type="text" class="modal-block__item__input" name="userName" autocomplete="off" required >
                     <span class="modal-block__item-label">Ваше имя</span>
