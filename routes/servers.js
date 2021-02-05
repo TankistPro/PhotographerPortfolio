@@ -1,8 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const { getSlider } = require("../controllers/sliderController");
-const { sendFormData, sendOrder } = require("../controllers/formController")
+const { sendFormData, sendOrder } = require("../controllers/formController");
 const { formValidate } = require("../validators/formValidator");
+const { orderValidator } = require("../validators/orderValidator");
 
 
 router.get("/", (req, res) => {
@@ -10,9 +11,9 @@ router.get("/", (req, res) => {
     title: "Главная страница"
   })
 })
+router.get("/slider/:filter", getSlider);
 
 router.post("/", formValidate ,sendFormData);
-router.post('/order', sendOrder)
-router.get("/slider/:filter", getSlider);
+router.post('/order', orderValidator, sendOrder);
 
 module.exports = router;
