@@ -1,9 +1,12 @@
 async function checkResponse(response) {
+  const status = document.querySelector(".feedback-footer-status");
   if(response.type === "success") {
-    console.log("OK")
+    status.innerText = response.message;
     document.forms["clientForm"].reset();
+  } else if(response.type === "error"){
+    status.innerText = response.message;
+    status.style.color = "red";
   }
-  alert(response.message);
 }
 
 async function sendData(event) {
@@ -24,6 +27,7 @@ async function sendData(event) {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(data)
-  }).then(data => data.json())
+  })
+      .then(data => data.json())
       .then(res => checkResponse(res));
 }

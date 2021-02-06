@@ -8,7 +8,8 @@ const { orderValidator } = require("../validators/orderValidator");
 
 router.get("/", (req, res) => {
   res.render('index', {
-    title: "Главная страница"
+    title: "Главная страница",
+    message: null
   })
 })
 router.get("/slider/:filter", getSlider);

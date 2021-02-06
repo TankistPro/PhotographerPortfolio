@@ -715,6 +715,9 @@
 }
 
 @media screen and (max-width: 530px) {
+    .modal-wrapper .modal-block {
+        border-radius: 0;
+    }
     .main-block .menu-burger__block-footer {
         justify-content: space-between;
         flex-wrap: wrap;
@@ -748,6 +751,14 @@
 }
 
 @media screen and (max-width: 453px) {
+    .modal-wrapper .modal-block__item-btn {
+        font-size: 1.3rem;
+        min-width: 275px;
+
+        &:hover {
+            font-size: 1.5rem;
+        }
+    }
     .main-block .menu-burger__block-footer__email {
         margin-bottom: 30px;
     }

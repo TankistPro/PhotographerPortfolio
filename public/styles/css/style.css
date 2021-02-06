@@ -672,6 +672,15 @@ body {
       font-weight: 600; }
     .contact-block__left-feedback__content-block {
       margin-top: 60px; }
+      .contact-block__left-feedback__content-block .feedback-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .contact-block__left-feedback__content-block .feedback-footer-status {
+          color: #000000;
+          font-size: 1.25rem;
+          font-weight: normal; }
       .contact-block__left-feedback__content-block .feedback__item {
         position: relative; }
         .contact-block__left-feedback__content-block .feedback__item .feedback-label {
@@ -722,12 +731,19 @@ body {
         border-radius: 10px;
         color: #ffffff;
         text-transform: uppercase;
-        padding: 25px 41px;
+        max-width: 249px;
+        min-width: 249px;
+        width: 36%;
+        height: 85px;
         border: none;
         cursor: pointer;
         font-style: normal;
         font-size: 1.875rem;
-        outline: none; }
+        outline: none;
+        transition: .3s all; }
+        .contact-block__left-feedback__content-block .feedback-btn:hover {
+          transition: .3s all;
+          font-size: 33px; }
   .contact-block__right {
     max-width: 856px;
     display: flex;
@@ -876,6 +892,9 @@ body {
         color: #7D7D7D;
         transition: .4s all; }
       .modal-wrapper .modal-block__item-btn {
+        min-width: 320px;
+        height: 89px;
+        width: 60%;
         display: block;
         border: none;
         outline: none;
@@ -885,9 +904,10 @@ body {
         font-size: 1.5625rem;
         font-weight: 600;
         cursor: pointer;
-        padding: 29px 72px;
         border-radius: 11px;
         background: linear-gradient(265.9deg, #FF5C00 -8.27%, #FF4D00 113.07%);
         margin: 75px auto 0 auto;
-        transition: .4s all;
-        -webkit-backface-visibility: hidden; }
+        transition: .3s all; }
+        .modal-wrapper .modal-block__item-btn:hover {
+          transition: .3s all;
+          font-size: 28px; }
