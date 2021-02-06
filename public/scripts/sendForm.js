@@ -1,6 +1,7 @@
 async function checkResponse(response) {
   const status = document.querySelector(".feedback-footer-status");
   if(response.type === "success") {
+    status.style.color = "black";
     status.innerText = response.message;
     document.forms["clientForm"].reset();
   } else if(response.type === "error"){
