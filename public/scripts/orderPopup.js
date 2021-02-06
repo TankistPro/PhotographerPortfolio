@@ -33,10 +33,15 @@ orderBtn.forEach(button => {
   button.addEventListener('click', () => {
     modalWrapper.style.display = 'flex';
     body.style.overflow = 'hidden';
+    modalWrapper.style.transition = '.4s all';
+    setTimeout(() => {
+      modalWrapper.style.opacity = '1';
+    }, 100)
   })
 })
 
 closeOrder.addEventListener('click', () => {
   modalWrapper.style.display = 'none';
   body.style.overflow = 'auto';
+  modalWrapper.style.opacity = '0';
 })
