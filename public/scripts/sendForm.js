@@ -12,7 +12,6 @@ async function checkResponse(response) {
 
 async function sendData(event) {
   event.preventDefault();
-
   const data = {
     userName: document.forms["clientForm"].elements['userName'].value,
     email: document.forms["clientForm"].elements['email'].value,
@@ -32,3 +31,6 @@ async function sendData(event) {
       .then(data => data.json())
       .then(res => checkResponse(res));
 }
+
+const sendFormBtn = document.querySelector('.feedback-btn');
+sendFormBtn.addEventListener('click', sendData)

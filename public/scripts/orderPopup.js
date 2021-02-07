@@ -1,8 +1,10 @@
 async function checkResponseOrder(response) {
   if(response.type === "success") {
     document.forms["orderPopup"].reset();
+    modalWrapper.style.display = 'none';
+    body.style.overflow = 'auto';
+    modalWrapper.style.opacity = '0';
   }
-  alert(response.message);
 }
 
 async function sendOrder(event) {
@@ -45,3 +47,7 @@ closeOrder.addEventListener('click', () => {
   body.style.overflow = 'auto';
   modalWrapper.style.opacity = '0';
 })
+
+const sendOrderBtn = document.querySelector('.modal-block__item-btn');
+
+sendOrderBtn.addEventListener('click', sendOrder);
