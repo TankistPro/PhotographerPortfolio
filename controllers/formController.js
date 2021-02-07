@@ -6,7 +6,7 @@ module.exports.sendFormData = async (req, res) => {
     await sendMailForm(req);
     res.status(400).json({ message: "Ваше сообщение успешно отправленно!", type: "success" })
   } else {
-    res.status(400).json({ message: "Проверьте введенные данные!", type: "error" })
+    res.status(400).json({ message: "Ошибка! Проверьте введенные данные!", type: "error" })
   }
 }
 
