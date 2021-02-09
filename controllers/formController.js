@@ -13,7 +13,7 @@ module.exports.sendFormData = async (req, res) => {
 module.exports.sendOrder = async (req, res) => {
   if (validationResult(req).isEmpty()) {
     await sendMailOrder(req);
-    res.status(200).json({ message: "Заказ успешно отправлен!", type: "success" })
+    res.status(200).json({ type: "success" })
   } else {
     res.status(400).json({ message: "Ошибка! Проверьте введенные данные!", type: "error" })
   }
