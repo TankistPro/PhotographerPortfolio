@@ -1,9 +1,14 @@
 async function checkResponseOrder(response) {
+  const error = document.querySelector('.warning-block__text');
   if(response.type === "success") {
+    error.innerText = '';
     document.forms["orderPopup"].reset();
     modalWrapper.style.display = 'none';
     body.style.overflow = 'auto';
     modalWrapper.style.opacity = '0';
+  } else if(response.type === 'error') {
+    error.style.color = 'red';
+    error.innerText = response.message;
   }
 }
 
@@ -49,5 +54,4 @@ closeOrder.addEventListener('click', () => {
 })
 
 const sendOrderBtn = document.querySelector('.modal-block__item-btn');
-
 sendOrderBtn.addEventListener('click', sendOrder);

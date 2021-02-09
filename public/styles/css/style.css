@@ -865,6 +865,9 @@ body {
       margin: auto; }
     .modal-wrapper .modal-block form {
       margin-top: 63px; }
+      .modal-wrapper .modal-block form .warning-block {
+        margin-top: 10px;
+        min-height: 19px; }
     .modal-wrapper .modal-block__item {
       position: relative; }
       .modal-wrapper .modal-block__item:not(:first-child) {
@@ -906,7 +909,7 @@ body {
         cursor: pointer;
         border-radius: 11px;
         background: linear-gradient(265.9deg, #FF5C00 -8.27%, #FF4D00 113.07%);
-        margin: 75px auto 0 auto;
+        margin: 65px auto 0 auto;
         transition: .3s all; }
         .modal-wrapper .modal-block__item-btn:hover {
           transition: .3s all;

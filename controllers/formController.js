@@ -15,6 +15,6 @@ module.exports.sendOrder = async (req, res) => {
     await sendMailOrder(req);
     res.status(200).json({ message: "Заказ успешно отправлен!", type: "success" })
   } else {
-    res.status(400).json({ message: "Данные не корректны!", type: "error" })
+    res.status(400).json({ message: "Ошибка! Проверьте введенные данные!", type: "error" })
   }
 }
