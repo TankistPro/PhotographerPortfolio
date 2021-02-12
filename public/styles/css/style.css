@@ -882,6 +882,8 @@ body {
         outline: none;
         color: #000000;
         padding-bottom: 16px; }
+        .modal-wrapper .modal-block__item__input.phone {
+          color: #7D7D7D; }
       .modal-wrapper .modal-block__item .modal-block__item__input:not(:focus):valid ~ .modal-block__item-label,
       .modal-wrapper .modal-block__item .modal-block__item__input:focus ~ .modal-block__item-label {
         font-size: 1.2rem;

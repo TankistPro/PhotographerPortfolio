@@ -1,8 +1,9 @@
 async function checkResponseOrder(response) {
   const error = document.querySelector('.warning-block__text');
   if(response.type === "success") {
+    document.forms['orderPopup'].elements['userName'].value = '';
     error.innerText = '';
-    document.forms["orderPopup"].reset();
+    // document.forms["orderPopup"].reset();
     modalWrapper.style.display = 'none';
     body.style.overflow = 'auto';
     modalWrapper.style.opacity = '0';
@@ -14,7 +15,6 @@ async function checkResponseOrder(response) {
 
 async function sendOrder(event) {
   event.preventDefault();
-
   const data = {
     userName: document.forms['orderPopup'].elements['userName'].value,
     phone: document.forms['orderPopup'].elements['userPhone'].value,

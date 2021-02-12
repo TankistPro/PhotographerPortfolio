@@ -1255,6 +1255,10 @@ body {
                 outline: none;
                 color: #000000;
                 padding-bottom: 16px;
+
+                &.phone {
+                    color: #7D7D7D;
+                }
             }
 
             .modal-block__item__input:not(:focus):valid~.modal-block__item-label,
